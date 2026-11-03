@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yeşilay Sağlıklı Yaşam Ligi | Uzunkuyu İlkokulu - Ortaokulu</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #00875A;
+            --secondary-color: #2D3748;
+            --accent-color: #E2E8F0;
+            --bg-light: #F7FAFC;
+            --text-dark: #1A202C;
+            --white: #FFFFFF;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-light);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #00875A, #005A3C);
+            color: var(--white);
+            padding: 2.5rem 1rem;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .header-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .badge {
+            background-color: rgba(255,255,255,0.2);
+            padding: 0.4rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 0.8rem;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .sub-title {
+            font-size: 1.3rem;
+            font-weight: 300;
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .card {
+            background: var(--white);
+            border-radius: 8px;
+            padding: 1.5rem 2rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            border-left: 4px solid var(--primary-color);
+        }
+
+        .card h2 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            font-size: 1.4rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .section-image {
+            width: 100%;
+            max-height: 350px;
+            object-fit: cover;
+            border-radius: 6px;
+            margin-bottom: 1rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        /* Odak Alanları Grid */
+        .grid-focus {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .focus-item {
+            background: var(--bg-light);
+            border-radius: 6px;
+            overflow: hidden;
+            border: 1px solid var(--accent-color);
+            text-align: center;
+        }
+
+        .focus-item img {
+            width: 100%;
+            height: 140px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .focus-content {
+            padding: 1rem;
+        }
+
+        .focus-item h3 {
+            font-size: 1rem;
+            margin-bottom: 0.3rem;
+            color: var(--primary-color);
+        }
+
+        .focus-item p {
+            font-size: 0.85rem;
+            color: #4A5568;
+        }
+
+        /* Etkinlik Tablosu */
+        .table-responsive {
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+
+        th, td {
+            padding: 0.75rem 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--accent-color);
+        }
+
+        th {
+            background-color: var(--bg-light);
+            color: var(--secondary-color);
+            font-weight: 600;
+        }
+
+        /* Rol Alanları Grid */
+        .grid-roles {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+
+        .role-card {
+            background: var(--bg-light);
+            padding: 1rem 1.5rem;
+            border-radius: 6px;
+        }
+
+        .role-card h3 {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+            color: var(--secondary-color);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .role-card ul {
+            list-style-type: disc;
+            padding-left: 1.2rem;
+            font-size: 0.9rem;
+        }
+
+        .role-card li {
+            margin-bottom: 0.3rem;
+        }
+
+        footer {
+            background: var(--secondary-color);
+            color: var(--white);
+            text-align: center;
+            padding: 1.5rem 1rem;
+            margin-top: 3rem;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 1.6rem; }
+            .sub-title { font-size: 1.1rem; }
+            .card { padding: 1rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <span class="badge">PROJE GÖRÜNÜRLÜK FAALİYETİ</span>
+            <h1>YEŞİLAY SAĞLIKLI YAŞAM LİGİ PROJESİ</h1>
+            <div class="sub-title">“Bağımsız Ol, Sağlıklı Kal”</div>
+            <p style="margin-top: 0.8rem; font-size: 0.95rem; opacity: 0.85;">
+                Uzunkuyu İlkokulu - Ortaokulu • 2026-2027 Eğitim Öğretim Yılı
+            </p>
+        </div>
+    </header>
+
+    <div class="container">
+
+        <!-- Proje Nedir -->
+        <section class="card">
+            <h2><i class="fas fa-info-circle"></i> Proje Nedir?</h2>
+            <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=1000&q=80" alt="Sağlıklı Yaşam ve Spor" class="section-image">
+            <p>
+                İzmir İl Millî Eğitim Müdürlüğü ile Yeşilay İzmir Şubesi iş birliğinde yürütülen <strong>Sağlıklı Yaşam Ligi</strong> projesi; öğrencilerimizin sağlıklı beslenme, düzenli fiziksel aktivite, uyku düzeni ve ekran süresinin doğru yönetimi konularında bilinçlenmesini ve her türlü bağımlılığa karşı erken yaşta korunmasını amaçlamaktadır.
+            </p>
+            <p style="margin-top: 0.5rem;">
+                Geçen yıl yüz binin üzerinde öğrenciye ulaşan proje, bu yıl <strong>Uzunkuyu İlkokulu - Ortaokulu</strong> katılımıyla öğrencilerimiz, velilerimiz ve öğretmenlerimizle birlikte “bağımsız ve sağlıklı nesiller” hedefiyle devam etmektedir.
+            </p>
+        </section>
+
+        <!-- Odak Alanları -->
+        <section class="card">
+            <h2><i class="fas fa-bullseye"></i> Projenin Odak Alanları</h2>
+            <div class="grid-focus">
+                <div class="focus-item">
+                    <img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=400&q=80" alt="Sağlıklı Beslenme">
+                    <div class="focus-content">
+                        <h3>Sağlıklı Beslenme</h3>
+                        <p>Dengeli beslenme, paketli ve işlenmiş gıdalardan uzak durma.</p>
+                    </div>
+                </div>
+                <div class="focus-item">
+                    <img src="https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?auto=format&fit=crop&w=400&q=80" alt="Hareketli Yaşam - Spor ve Bisiklet">
+                    <div class="focus-content">
+                        <h3>Hareketli Yaşam</h3>
+                        <p>Spor, yürüyüş ve bisikletle aktif günlük yaşam.</p>
+                    </div>
+                </div>
+                <div class="focus-item">
+                    <img src="https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?auto=format&fit=crop&w=400&q=80" alt="Uyku Düzeni">
+                    <div class="focus-content">
+                        <h3>Uyku Düzeni</h3>
+                        <p>Yeterli uykunun dikkat ve ruh sağlığına olumlu etkisi.</p>
+                    </div>
+                </div>
+                <div class="focus-item">
+                    <img src="https://images.unsplash.com/photo-1522199755839-a2bacb67c546?auto=format&fit=crop&w=400&q=80" alt="Ekran Yönetimi">
+                    <div class="focus-content">
+                        <h3>Ekran Yönetimi</h3>
+                        <p>Dijital araçların bilinçli kullanımı ve bağımlılıkla mücadele.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Etkinlikler Tablosu -->
+        <section class="card">
+            <h2><i class="fas fa-tasks"></i> Proje Kapsamında Neler Yapılıyor?</h2>
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Etkinlik Alanı</th>
+                            <th>Açıklama</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>01</strong></td>
+                            <td>Farkındalık ve Eğitim</td>
+                            <td>Bilgilendirme seminerleri ve sınıf içi rehberlik çalışmaları.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>02</strong></td>
+                            <td>Yarışmalar</td>
+                            <td>Resim, yetenek ve teknoloji temelli yarışmalar.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>03</strong></td>
+                            <td>Sosyal/Sportif Etkinlikler</td>
+                            <td>Sağlıklı yaşam yürüyüşleri ve Geleneksel Yeşilay Bisiklet Turu.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>04</strong></td>
+                            <td>Aile Katılımı</td>
+                            <td>Velilerin sürece dahil edilerek alışkanlıkların eve taşınması.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>05</strong></td>
+                            <td>Final Festivali</td>
+                            <td>İzmir Yeşilay Bağımsızlık Festivali ile yıl sonu sergi ve ödülleri.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Paydaşların Rolleri -->
+        <section class="card">
+            <h2><i class="fas fa-users"></i> Paydaşlarımızın Rolleri</h2>
+            <div class="grid-roles">
+                <div class="role-card">
+                    <h3><i class="fas fa-user-graduate"></i> Öğrencilerimiz</h3>
+                    <ul>
+                        <li>Sağlıklı yaşam alışkanlıkları kazanmak</li>
+                        <li>Bağımlılık risklerini tanımak</li>
+                        <li>Etkinliklere aktif katılım sağlamak</li>
+                    </ul>
+                </div>
+                <div class="role-card">
+                    <h3><i class="fas fa-user-friends"></i> Velilerimiz</h3>
+                    <ul>
+                        <li>Evde düzenli uyku ve beslenmeyi desteklemek</li>
+                        <li>Ekran süresini birlikte planlamak</li>
+                        <li>Okul etkinliklerine katılmak</li>
+                    </ul>
+                </div>
+                <div class="role-card">
+                    <h3><i class="fas fa-chalkboard-teacher"></i> Öğretmenlerimiz</h3>
+                    <ul>
+                        <li>Ders içi faaliyetlerle desteklemek</li>
+                        <li>Öğrencilere rol model olmak</li>
+                        <li>Süreçleri rehberlikle yürütmek</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Beklentiler ve İletişim -->
+        <section class="card">
+            <h2><i class="fas fa-flag-checkered"></i> Projeden Beklentilerimiz</h2>
+            <p>Öğrencilerimizde bağımlılık risklerine karşı farkındalık oluşturulması, sağlıklı yaşam kültürünün tüm okul iklimine yayılması ve okul-aile iş birliğiyle bu alışkanlıkların kalıcı hâle gelmesi hedeflenmektedir.</p>
+        </section>
+
+    </div>
+
+    <footer>
+        <p><strong>Uzunkuyu İlkokulu - Ortaokulu</strong> • Yeşilay & Sağlıklı Yaşam Kulübü</p>
+        <p style="font-size: 0.8rem; margin-top: 0.3rem; opacity: 0.7;">İzmir İl Millî Eğitim Müdürlüğü & Yeşilay İzmir Şubesi İş Birliğiyle</p>
+    </footer>
+
+</body>
+</html>
